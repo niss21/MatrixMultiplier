@@ -1,0 +1,11 @@
+.base-results-wrapper {
+  max-width: 80%;
+}
+
+.base-results-wrapper h2 {
+  margin-bottom: 10px;
+}
+
+.base-results-wrapper span {
+  word-wrap: break-word;
+}

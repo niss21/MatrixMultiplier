@@ -1,0 +1,40 @@
+.tab-wrapper {
+  position: relative;
+  margin-top: 62px;
+  height: calc(100vh - 64px);
+}
+
+.currentTab-wrapper {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.currentTab-wrapper::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgb(18, 18, 18);
+}
+
+.currentTab-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgb(93, 23, 222);
+  border-radius: 10px;
+}
+
+.sidebar-background-cover {
+  display: none;
+  position: fixed;
+  background-color: rgba(103, 101, 101, 0.1);
+  inset: 0;
+}
+
+.show-sidebar-cover {
+  display: block;
+}
+
+@media screen and (width >= 720px) {
+  .currentTab-wrapper {
+    margin-left: 240px;
+  }
+  .sidebar-background-cover {
+    display: none;
+  }
+}

@@ -1,0 +1,81 @@
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: rgb(27, 27, 27);
+  gap: 10px;
+  padding: 16px;
+  width: 100%;
+}
+
+.routes-wrapper {
+  display: flex;
+  margin: 0 auto;
+  gap: 10px;
+  overflow-x: scroll;
+  max-width: 80%;
+  width: fit-content;
+  scrollbar-width: none;
+}
+
+.routes-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.route {
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  min-width: fit-content;
+  margin-right: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.route:hover {
+  background-color: rgb(93, 23, 222);
+}
+
+.active-route {
+  background-color: rgb(93, 23, 222);
+}
+
+.sidebar-toggle-btn {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.sidebar-toggle-btn svg {
+  color: white;
+}
+
+.remove-sidebar-toggle-btn {
+  display: none;
+}
+
+.show-sidebar {
+  left: 0;
+}
+
+@media (hover: hover) {
+  .sidebar-toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media screen and (width >= 720px) {
+  .sidebar-toggle-btn {
+    display: none;
+  }
+}
